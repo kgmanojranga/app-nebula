@@ -1,0 +1,64 @@
+<div mat-dialog-title>
+  <h1>Enroll Students</h1>
+</div>
+<mat-divider></mat-divider>
+<form [formGroup]="studentEnrollmentForm" (ngSubmit)="onSubmit()">
+  <div mat-dialog-content class="content">
+    <div class="row">
+      <mat-form-field appearance="outline">
+        <mat-label>Student</mat-label>
+        <mat-select formControlName="student_id">
+          <mat-option *ngFor="let val of students" [value]="val.id"
+            >{{ val.name }}
+          </mat-option>
+        </mat-select>
+        <div
+          *ngIf="
+            studentEnrollmentForm.controls['student_id'].invalid &&
+            (studentEnrollmentForm.controls['student_id'].dirty ||
+              studentEnrollmentForm.controls['student_id'].touched)
+          "
+          class="alert-danger"
+        >
+          <div
+            *ngIf="studentEnrollmentForm.controls['student_id'].errors?.['required']"
+          >
+            Student is required.
+          </div>
+        </div>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Program</mat-label>
+        <mat-select formControlName="program_id">
+          <mat-option *ngFor="let val of programs" [value]="val.id"
+            >{{ val.name }}
+          </mat-option>
+        </mat-select>
+        <div
+          *ngIf="
+            studentEnrollmentForm.controls['program_id'].invalid &&
+            (studentEnrollmentForm.controls['program_id'].dirty ||
+              studentEnrollmentForm.controls['program_id'].touched)
+          "
+          class="alert-danger"
+        >
+          <div
+            *ngIf="studentEnrollmentForm.controls['program_id'].errors?.['required']"
+          >
+            Program is required.
+          </div>
+        </div>
+      </mat-form-field>
+    </div>
+  </div>
+  <mat-divider></mat-divider>
+  <div mat-dialog-actions class="actions">
+    <button mat-raised-button type="button" [mat-dialog-close]="false">
+      Cancel
+    </button>
+    <button mat-raised-button class="button-update-save" type="submit">
+      {{ data ? "Update" : "Save" }}
+    </button>
+  </div>
+</form>

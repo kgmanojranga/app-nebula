@@ -1,0 +1,25 @@
+<mat-toolbar color="primary" class="toolbar-container">
+  <span>
+    <button mat-button [matMenuTriggerFor]="menu" class="button-menu">
+      <mat-icon>more_vert</mat-icon>Menu
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item type="button" routerLink="/students">
+        <mat-icon>people</mat-icon> Student
+      </button>
+      <button mat-menu-item type="button" routerLink="/programs">
+        <mat-icon>apps</mat-icon> Programs
+      </button>
+      <button mat-menu-item type="button" routerLink="/student-enrollments">
+        <mat-icon>supervised_user_circle</mat-icon> Student Enrollment
+      </button>
+    </mat-menu>
+  </span>
+  <span class="example-spacer"></span>
+  <span class="nebula-label">Nebula System</span>
+  <button mat-mini-fab class="button-login">
+    <mat-icon>perm_identity</mat-icon>
+  </button>
+</mat-toolbar>
+
+<router-outlet></router-outlet>

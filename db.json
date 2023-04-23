@@ -1,0 +1,49 @@
+{
+  "students": [
+    {
+      "name": "Nuwa",
+      "address": "Malwatta",
+      "contact": "0772657",
+      "id": 7
+    },
+    {
+      "name": "dfjasdfaf",
+      "address": "sdfasdfasfa",
+      "contact": "asdfasdfasdfa",
+      "id": 8
+    },
+    {
+      "name": "Manoj",
+      "address": "Matara",
+      "contact": "151515",
+      "id": 9
+    },
+    {
+      "name": "Mna",
+      "address": "ASDFASDF",
+      "contact": "1554",
+      "id": 10
+    }
+  ],
+  "programs": [
+    {
+      "name": "Pur",
+      "duration": "3",
+      "cost": "13000",
+      "id": 2
+    },
+    {
+      "name": "RAgnar",
+      "duration": "4",
+      "cost": "14856",
+      "id": 3
+    }
+  ],
+  "student-enrollments": [
+    {
+      "student_id": 5,
+      "program_id": 1,
+      "id": 1
+    }
+  ]
+}

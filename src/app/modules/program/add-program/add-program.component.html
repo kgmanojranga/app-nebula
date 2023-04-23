@@ -1,0 +1,89 @@
+<div mat-dialog-title>
+  <h1>Register Program</h1>
+</div>
+<mat-divider></mat-divider>
+<form [formGroup]="programForm" (ngSubmit)="onSubmit()">
+  <div mat-dialog-content class="content">
+    <div class="row">
+      <mat-form-field appearance="outline">
+        <mat-label>Name</mat-label>
+        <input
+          matInput
+          type="text"
+          placeholder="Ex. A.B.Jones"
+          formControlName="name"
+        />
+        <div
+          *ngIf="
+            programForm.controls['name'].invalid &&
+            (programForm.controls['name'].dirty ||
+              programForm.controls['name'].touched)
+          "
+          class="alert-danger"
+        >
+          <div *ngIf="programForm.controls['name'].errors?.['required']">
+            Name is required.
+          </div>
+        </div>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Duration</mat-label>
+        <input
+          matInput
+          type="text"
+          placeholder="Duration"
+          formControlName="duration"
+        />
+        <div
+          *ngIf="
+            programForm.controls['duration'].invalid &&
+            (programForm.controls['duration'].dirty ||
+              programForm.controls['duration'].touched)
+          "
+          class="alert-danger"
+        >
+          <div *ngIf="programForm.controls['duration'].errors?.['required']">
+            Duration is required.
+          </div>
+        </div>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Cost</mat-label>
+        <input
+          matInput
+          type="tel"
+          placeholder="Ex. 11250.00"
+          formControlName="cost"
+        />
+        <div
+          *ngIf="
+            programForm.controls['cost'].invalid &&
+            (programForm.controls['cost'].dirty ||
+              programForm.controls['cost'].touched)
+          "
+          class="alert-danger"
+        >
+          <div *ngIf="programForm.controls['cost'].errors?.['required']">
+            Cost is required.
+          </div>
+        </div>
+      </mat-form-field>
+    </div>
+  </div>
+  <mat-divider></mat-divider>
+  <div mat-dialog-actions class="actions">
+    <button mat-raised-button type="button" [mat-dialog-close]="false">
+      Cancel
+    </button>
+    <button
+      mat-raised-button
+      color="primary"
+      type="submit"
+      class="button-update-save"
+    >
+      {{ data ? "Update" : "Save" }}
+    </button>
+  </div>
+</form>

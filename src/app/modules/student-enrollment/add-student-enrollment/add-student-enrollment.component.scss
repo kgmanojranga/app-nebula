@@ -1,0 +1,26 @@
+.content {
+  padding-top: 10px;
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+}
+
+.actions {
+  float: right;
+  padding: 0px 25px 25px 0px;
+}
+
+.alert-danger {
+  color: red;
+}
+
+.button-update-save {
+  background-color: rgba(3, 90, 169, 255);
+  color: white;
+}
+
+mat-divider {
+  padding-bottom: 25px;
+}

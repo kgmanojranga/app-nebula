@@ -1,0 +1,84 @@
+<div mat-dialog-title>
+  <h1>Register Student</h1>
+</div>
+<mat-divider></mat-divider>
+<form [formGroup]="studentForm" (ngSubmit)="onSubmit()">
+  <div mat-dialog-content class="content">
+    <div class="row">
+      <mat-form-field appearance="outline">
+        <mat-label>Name</mat-label>
+        <input
+          matInput
+          type="text"
+          placeholder="Ex. A.B.Jones"
+          formControlName="name"
+        />
+        <div
+          *ngIf="
+            studentForm.controls['name'].invalid &&
+            (studentForm.controls['name'].dirty ||
+              studentForm.controls['name'].touched)
+          "
+          class="alert-danger"
+        >
+          <div *ngIf="studentForm.controls['name'].errors?.['required']">
+            Name is required.
+          </div>
+        </div>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Address</mat-label>
+        <input
+          matInput
+          type="text"
+          placeholder="Address"
+          formControlName="address"
+        />
+        <div
+          *ngIf="
+            studentForm.controls['address'].invalid &&
+            (studentForm.controls['address'].dirty ||
+              studentForm.controls['address'].touched)
+          "
+          class="alert-danger"
+        >
+          <div *ngIf="studentForm.controls['address'].errors?.['required']">
+            Address is required.
+          </div>
+        </div>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Contact</mat-label>
+        <input
+          matInput
+          type="tel"
+          placeholder="Ex. 0771234567"
+          formControlName="contact"
+        />
+        <div
+          *ngIf="
+            studentForm.controls['contact'].invalid &&
+            (studentForm.controls['contact'].dirty ||
+              studentForm.controls['contact'].touched)
+          "
+          class="alert-danger"
+        >
+          <div *ngIf="studentForm.controls['contact'].errors?.['required']">
+            Contact is required.
+          </div>
+        </div>
+      </mat-form-field>
+    </div>
+  </div>
+  <mat-divider></mat-divider>
+  <div mat-dialog-actions class="actions">
+    <button mat-raised-button type="button" [mat-dialog-close]="false">
+      Cancel
+    </button>
+    <button mat-raised-button class="button-update-save" type="submit">
+      {{ data ? "Update" : "Save" }}
+    </button>
+  </div>
+</form>
