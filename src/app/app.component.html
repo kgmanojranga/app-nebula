@@ -4,6 +4,9 @@
       <mat-icon>more_vert</mat-icon>Menu
     </button>
     <mat-menu #menu="matMenu">
+      <button mat-menu-item type="button" routerLink="">
+        <mat-icon>home</mat-icon> Home
+      </button>
       <button mat-menu-item type="button" routerLink="/students">
         <mat-icon>people</mat-icon> Student
       </button>
@@ -16,6 +19,7 @@
     </mat-menu>
   </span>
   <span class="example-spacer"></span>
+
   <span class="nebula-label">Nebula System</span>
   <button mat-mini-fab class="button-login">
     <mat-icon>perm_identity</mat-icon>

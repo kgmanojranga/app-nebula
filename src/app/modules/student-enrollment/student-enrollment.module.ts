@@ -13,6 +13,7 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { MatCardModule } from '@angular/material/card';
 import { MatSelectModule } from '@angular/material/select';
+import { MatAutocompleteModule } from '@angular/material/autocomplete';
 
 import { AddStudentEnrollmentComponent } from './add-student-enrollment/add-student-enrollment.component';
 import { StudentEnrollmentComponent } from './student-enrollment.component';
@@ -37,6 +38,7 @@ import { MatDividerModule } from '@angular/material/divider';
     MatCardModule,
     MatSelectModule,
     MatDividerModule,
+    MatAutocompleteModule,
   ],
   exports: [StudentEnrollmentComponent],
 })

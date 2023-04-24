@@ -1,42 +1,84 @@
 {
   "students": [
     {
-      "name": "Nuwa",
-      "address": "Malwatta",
-      "contact": "0772657",
-      "id": 7
+      "name": "S. D. G. Holms",
+      "address": "221B, Baker street, Sri Lanka",
+      "contact": "0772655223",
+      "id": 1
     },
     {
-      "name": "dfjasdfaf",
-      "address": "sdfasdfasfa",
-      "contact": "asdfasdfasdfa",
-      "id": 8
+      "name": "R. R. Darshana",
+      "address": "Jaya Mawatha, Moratumulla, Moratuwa",
+      "contact": "0772596321",
+      "id": 2
     },
     {
-      "name": "Manoj",
-      "address": "Matara",
-      "contact": "151515",
-      "id": 9
+      "name": "D. H. Fernando",
+      "address": "No 15/4, Isadeen town, Matara",
+      "contact": "0774586123",
+      "id": 3
     },
     {
-      "name": "Mna",
-      "address": "ASDFASDF",
-      "contact": "1554",
-      "id": 10
+      "name": "K. M. G. Rathnasiri",
+      "address": "Kahatagas Digiliya, Anuradhapura",
+      "contact": "0704321298",
+      "id": 4
+    },
+    {
+      "name": "K. R. Pirubakiran",
+      "address": "Kajjuwatta road, Deniyaya",
+      "contact": "0746598123",
+      "id": 5
+    },
+    {
+      "name": "H. D. G. Sangakkara",
+      "address": "Pallekanda, Anuradhapura",
+      "contact": "0714562389",
+      "id": 6
     }
   ],
   "programs": [
     {
-      "name": "Pur",
-      "duration": "3",
-      "cost": "13000",
+      "name": "The Complete JavaScript Course 2023: From Zero to Expert!",
+      "duration": "2 year",
+      "cost": "55000",
       "id": 2
     },
     {
-      "name": "RAgnar",
-      "duration": "4",
-      "cost": "14856",
+      "name": "Build Responsive Real-World Websites with HTML and CSS",
+      "duration": "6 Months",
+      "cost": "20000",
       "id": 3
+    },
+    {
+      "name": "100 Days of Code: The Complete Python Pro Bootcamp for 2023",
+      "duration": "9 Months",
+      "cost": "25000",
+      "id": 4
+    },
+    {
+      "name": "Angular - The Complete Guide (2023 Edition)",
+      "duration": "1 year",
+      "cost": "35000",
+      "id": 5
+    },
+    {
+      "name": "Bootstrap 5 Course - The Complete Guide Step by Step (2023)",
+      "duration": "6 Months",
+      "cost": "30000",
+      "id": 6
+    },
+    {
+      "name": "Java Programming Masterclass updated to Java 17",
+      "duration": "15 Months",
+      "cost": "50000",
+      "id": 7
+    },
+    {
+      "name": "[NEW] Master Spring Boot 3 & Spring Framework 6 with Java",
+      "duration": "9 Months",
+      "cost": "35000",
+      "id": 8
     }
   ],
   "student-enrollments": [
@@ -44,6 +86,41 @@
       "student_id": 5,
       "program_id": 1,
       "id": 1
+    },
+    {
+      "student_id": 1,
+      "program_id": 2,
+      "id": 2
+    },
+    {
+      "student_id": 2,
+      "program_id": 3,
+      "id": 3
+    },
+    {
+      "student_id": 3,
+      "program_id": 4,
+      "id": 4
+    },
+    {
+      "student_id": 4,
+      "program_id": 5,
+      "id": 5
+    },
+    {
+      "student_id": 5,
+      "program_id": 8,
+      "id": 6
+    },
+    {
+      "student_id": 6,
+      "program_id": 3,
+      "id": 7
+    },
+    {
+      "student_id": 2,
+      "program_id": 4,
+      "id": 8
     }
   ]
 }

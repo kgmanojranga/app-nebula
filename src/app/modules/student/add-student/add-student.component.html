@@ -1,12 +1,16 @@
+<!-- Title -->
 <div mat-dialog-title>
   <h1>Register Student</h1>
 </div>
+
 <mat-divider></mat-divider>
+
+<!-- Form -->
 <form [formGroup]="studentForm" (ngSubmit)="onSubmit()">
   <div mat-dialog-content class="content">
     <div class="row">
       <mat-form-field appearance="outline">
-        <mat-label>Name</mat-label>
+        <mat-label></mat-label>
         <input
           matInput
           type="text"
@@ -26,7 +30,8 @@
           </div>
         </div>
       </mat-form-field>
-
+    </div>
+    <div class="row">
       <mat-form-field appearance="outline">
         <mat-label>Address</mat-label>
         <input
@@ -48,7 +53,8 @@
           </div>
         </div>
       </mat-form-field>
-
+    </div>
+    <div class="row">
       <mat-form-field appearance="outline">
         <mat-label>Contact</mat-label>
         <input
