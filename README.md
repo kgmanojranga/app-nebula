@@ -21,24 +21,30 @@
 
 ## Our Services
 
-###For Student
+For Student
+<br />
 1.SAVE/CREATE (post) http://localhost:3000/students
+<br />
 Request
 {
 	"name": "S. D. G. Holms",
 	"address": "221B, Baker street, Sri Lanka",
 	"contact": "0772655223"
 }
+<br />
 
 2.UPDATE (put) http://localhost:3000/students/${id}
+<br />
 Request
 {
 	"name": "S. D. G. Holms",
 	"address": "221B, Baker street, Sri Lanka",
 	"contact": "0772655223"
 }
+<br />
 
 3.GET (get) http://localhost:3000/students
+<br />
 Response
 [
 	{
@@ -54,27 +60,37 @@ Response
 	"id": 2
 	}
 ]
+<br />
 
 4.DELETE (delete) http://localhost:3000/students/${id}
+<br />
 
-###For Programs
+For Programs
+<br />
 1.SAVE/CREATE (post) http://localhost:3000/programs
+<br />
 Request
 {
 	"name": "The Complete JavaScript Course 2023: From Zero to Expert!",
 	"duration": "2 year",
 	"cost": "55000"
 }
+<br />
 
 2.UPDATE (put) http://localhost:3000/programs/${id}
+<br />
+
 Request
 {
 	"name": "The Complete JavaScript Course 2023: From Zero to Expert!",
 	"duration": "2 year",
 	"cost": "55000"
 }
+<br />
 
 3.GET (get) http://localhost:3000/programs
+<br />
+
 Response
 [
 	{
@@ -90,10 +106,16 @@ Response
 	"id": 3
 	}
 ]
-4.DELETE (delete) http://localhost:3000/programs/${id}
+<br />
 
-###For Student Enrollment
+4.DELETE (delete) http://localhost:3000/programs/${id}
+<br />
+
+For Student Enrollment
+<br />
+
 1.SAVE/CREATE (post) http://localhost:3000/student-enrollments
+<br />
 Request
 {
 	"student_id": 5,
@@ -102,9 +124,15 @@ Request
 
 ##Application Features
 o Can be saved, updated, deleted a student.
+<br />
 o Load all the students with the pagination option
+<br />
 o Can be searched a student by Student Id.
+<br />
 o Can be saved, updated, deleted a Program.
+<br />
 o Load all the programs with the pagination option.
+<br />
 o Can be searched a program with the Program Id.
+<br />
 o Register a student with a Particular program.
