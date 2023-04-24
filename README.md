@@ -21,7 +21,7 @@
 
 ## Our Services
 
-For Student
+### For Student
 <br />
 1.SAVE/CREATE (post) http://localhost:3000/students
 <br />
@@ -65,7 +65,7 @@ Response
 4.DELETE (delete) http://localhost:3000/students/${id}
 <br />
 
-For Programs
+### For Programs
 <br />
 1.SAVE/CREATE (post) http://localhost:3000/programs
 <br />
@@ -111,7 +111,7 @@ Response
 4.DELETE (delete) http://localhost:3000/programs/${id}
 <br />
 
-For Student Enrollment
+### For Student Enrollment
 <br />
 
 1.SAVE/CREATE (post) http://localhost:3000/student-enrollments
@@ -122,7 +122,8 @@ Request
 	"program_id": 1
 }
 
-##Application Features
+## Application Features
+<br />
 o Can be saved, updated, deleted a student.
 <br />
 o Load all the students with the pagination option
