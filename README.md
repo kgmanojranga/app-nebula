@@ -26,26 +26,31 @@
 1.SAVE/CREATE (post) http://localhost:3000/students
 <br />
 Request
+`
 {
 	"name": "S. D. G. Holms",
 	"address": "221B, Baker street, Sri Lanka",
 	"contact": "0772655223"
 }
+`
 <br />
 
 2.UPDATE (put) http://localhost:3000/students/${id}
 <br />
 Request
+`
 {
 	"name": "S. D. G. Holms",
 	"address": "221B, Baker street, Sri Lanka",
 	"contact": "0772655223"
 }
+`
 <br />
 
 3.GET (get) http://localhost:3000/students
 <br />
 Response
+`
 [
 	{
 	"name": "S. D. G. Holms",
@@ -60,6 +65,7 @@ Response
 	"id": 2
 	}
 ]
+`
 <br />
 
 4.DELETE (delete) http://localhost:3000/students/${id}
@@ -70,28 +76,33 @@ Response
 1.SAVE/CREATE (post) http://localhost:3000/programs
 <br />
 Request
+`
 {
 	"name": "The Complete JavaScript Course 2023: From Zero to Expert!",
 	"duration": "2 year",
 	"cost": "55000"
 }
+`
 <br />
 
 2.UPDATE (put) http://localhost:3000/programs/${id}
 <br />
 
 Request
+`
 {
 	"name": "The Complete JavaScript Course 2023: From Zero to Expert!",
 	"duration": "2 year",
 	"cost": "55000"
 }
+`
 <br />
 
 3.GET (get) http://localhost:3000/programs
 <br />
 
 Response
+`
 [
 	{
 	"name": "The Complete JavaScript Course 2023: From Zero to Expert!",
@@ -106,6 +117,7 @@ Response
 	"id": 3
 	}
 ]
+`
 <br />
 
 4.DELETE (delete) http://localhost:3000/programs/${id}
@@ -117,10 +129,12 @@ Response
 1.SAVE/CREATE (post) http://localhost:3000/student-enrollments
 <br />
 Request
+`
 {
 	"student_id": 5,
 	"program_id": 1
 }
+`
 
 ## Application Features
 <br />
