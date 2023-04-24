@@ -1,29 +1,110 @@
-# AppNebula
+# Nebula System
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.4.
+## Technologies
 
-## Development server
+1. Angular version 15.2.4.
+2. Angular material 15.2.8
+3. SCSS
+4. HTML
+5. JavaScript & TypeScript
+6. Mock json-server
+7. RestFull WebService
+8. Json
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Start application
 
-## Code scaffolding
+1.install json `json-server`
+2.Run command npm install
+3.Run the command `json-server --watch` db.json to run json-server
+4.Run `ng serve` for a dev server
+5.Navigate to `http://localhost:4200/` using your browser
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Our Services
 
-## Build
+###For Student
+1.SAVE/CREATE (post) http://localhost:3000/students
+Request
+{
+	"name": "S. D. G. Holms",
+	"address": "221B, Baker street, Sri Lanka",
+	"contact": "0772655223"
+}
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+2.UPDATE (put) http://localhost:3000/students/${id}
+Request
+{
+	"name": "S. D. G. Holms",
+	"address": "221B, Baker street, Sri Lanka",
+	"contact": "0772655223"
+}
 
-## Running unit tests
+3.GET (get) http://localhost:3000/students
+Response
+[
+	{
+	"name": "S. D. G. Holms",
+	"address": "221B, Baker street, Sri Lanka",
+	"contact": "0772655223",
+	"id": 1
+	},
+	{
+	"name": "R. R. Darshana",
+	"address": "Jaya Mawatha, Moratumulla, Moratuwa",
+	"contact": "0772596321",
+	"id": 2
+	}
+]
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+4.DELETE (delete) http://localhost:3000/students/${id}
 
-## Running end-to-end tests
+###For Programs
+1.SAVE/CREATE (post) http://localhost:3000/programs
+Request
+{
+	"name": "The Complete JavaScript Course 2023: From Zero to Expert!",
+	"duration": "2 year",
+	"cost": "55000"
+}
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+2.UPDATE (put) http://localhost:3000/programs/${id}
+Request
+{
+	"name": "The Complete JavaScript Course 2023: From Zero to Expert!",
+	"duration": "2 year",
+	"cost": "55000"
+}
 
-## Further help
+3.GET (get) http://localhost:3000/programs
+Response
+[
+	{
+	"name": "The Complete JavaScript Course 2023: From Zero to Expert!",
+	"duration": "2 year",
+	"cost": "55000",
+	"id": 2
+	},
+	{
+	"name": "Build Responsive Real-World Websites with HTML and CSS",
+	"duration": "6 Months",
+	"cost": "20000",
+	"id": 3
+	}
+]
+4.DELETE (delete) http://localhost:3000/programs/${id}
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
-"# app-nebula" 
-# app-nebula
+###For Student Enrollment
+1.SAVE/CREATE (post) http://localhost:3000/student-enrollments
+Request
+{
+	"student_id": 5,
+	"program_id": 1
+}
+
+##Application Features
+o Can be saved, updated, deleted a student.
+o Load all the students with the pagination option
+o Can be searched a student by Student Id.
+o Can be saved, updated, deleted a Program.
+o Load all the programs with the pagination option.
+o Can be searched a program with the Program Id.
+o Register a student with a Particular program.
